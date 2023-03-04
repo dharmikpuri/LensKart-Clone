@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In and Sign Up</title>
+    <link rel="stylesheet" href="./signin.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="form-wrapper sign-up">
+            <form id="signupform">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <input type="text" required id="upusername">
+                    <label for="">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required id="upuserpass">
+                    <label for="">Password</label>
+                </div>
+                <button type="submit" class="btn" id="myBtn">Sign Up</button>
+                <div class="sign-link">
+                    <p>Already have an account? <a href="#" class="signIn-link">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-wrapper sign-in">
+            <form id="signinform">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <input type="text" required id="inusername">
+                    <label for="">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required id="inuserpass">
+                    <label for="">Password</label>
+                </div>
+                
+                <div class="forgot-pass">
+                    <a href="#" id="forrrrgott">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn" id="myBtn">Login</button>
+                <div class="sign-link">
+                    <p>Don't have an account? <a href="#" class="signUp-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="signin.js"></script>
+</body>
+
+</html>

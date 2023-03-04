@@ -1,0 +1,197 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+ }
+ .item_image>img{
+    height:100px;
+     width:200px;
+ }
+ section{
+     width:100%;
+     height: 100vh;
+     background:#efefef;
+ }
+ section article{
+     width:99%;
+     height: 100vh;
+     margin:0 auto;
+ }
+ .navbar{
+     width:100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #fff;
+ }
+ .logo a{
+     width:250px;
+     display: flex;
+     justify-content: flex-end;
+     padding: 10px;
+     align-items: center;
+     gap: 5px;
+     text-decoration: none;
+     
+ }
+ .safe_secure a{
+     width:380px;
+     display: flex;
+     justify-content: flex-start;
+     padding: 10px;
+     align-items: center;
+     gap: 5px;
+     text-decoration: none;
+     
+ }
+ 
+ .main_section{
+     width:90%;
+     margin: 0 auto;
+     display: flex;
+     margin-top: 20px;
+
+ }
+ .left_side{
+     width:70%;
+     padding: 10px;
+ }
+ .left_side > .item{
+     display: flex;
+     background-color:white;
+     margin-top: 20px;
+     padding: 10px;
+     border-radius: 20px 15px;
+     box-shadow: 1px 1px 1px 1px gainsboro;
+     
+     
+ }
+
+ .item:hover,.bill:hover{
+    box-shadow: 5px 5px 5px 5px gainsboro;
+    font-weight: bolder;
+font-size: 15px;
+color: rgb(53, 53, 53);
+    
+    
+ }
+ .item > .item_image{
+      width:40%;
+    
+     
+     padding: 5px;
+ }
+ .item > .item_description
+ {
+     width:60%;
+     padding: 5px;
+ }
+ .item_description > div {
+    display: flex;
+     padding: 10px;
+     justify-content: space-between;
+    
+ }
+ .item_description > div > button
+ {
+     background: transparent;
+     padding-right: 10px;
+     border: none;
+     text-decoration: underline;
+     font-weight: bolder;
+ }
+ .right_side{
+     width:28%;
+     padding: 10px;
+ }
+ .bill{
+     background-color:white;
+     margin-top: 20px;
+     padding: 10px;
+     border-radius: 25px 20px;
+     box-shadow: 1px 1px 1px 1px gainsboro; 
+ }
+
+ .bill:hover{
+    box-shadow:  3px 3px 3px 3px rgb(148, 146, 146);
+    font-weight: bolder;
+font-size: 17px;
+color: black;  
+
+ }
+ .micky{
+    visibility: hidden;
+ }
+
+ .micky > span{
+    font-size: 50px;
+    
+ }
+
+ .bill > div {
+     display: flex;
+     justify-content: space-between;
+     padding: 10px;
+     border-bottom: 1px dotted gainsboro;
+ }
+ .bill > div:nth-last-child(1)
+ {
+     border: none;
+     font-weight: bolder;
+ }
+ 
+ .special_offer{
+    background-color:#fff5d1;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgb(249, 206, 106); 
+}
+
+.special_offer:hover{
+    border:  2px 2px 2px 2 rgb(239, 244, 189);
+    font-weight: bolder;
+font-size: 17px;
+color: black;
+}
+
+
+
+.apply_coupon{
+    background-color:white;
+     margin-top: 20px;
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 1px 1px 1px 1px gainsboro; 
+    
+
+}
+
+.apply_coupon:hover{
+    box-shadow: 3px 3px 3px 3px rgb(169, 169, 169);
+    font-weight: bolder;
+font-size: 17px;
+color: black;
+}
+
+.chkOut > button {
+    
+     margin-top: 20px;
+     padding: 10px;
+     border-radius: 30px;
+     background-color: #11daac;
+     width: 100%;
+     height: 60px;
+     border: none;
+     cursor: pointer;
+     font-weight: bolder;
+     
+
+      
+}
+.chkOut > button:hover {
+background-color:#1dcba3;
+font-weight: bolder;
+font-size: 18px;
+color: black;
+}

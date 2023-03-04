@@ -1,0 +1,563 @@
+/* FOTTER CSSSSSSS******************************* */
+
+body{
+  font-family: futurastd-book,helvetica neue,Helvetica,Arial,sans-serif;
+  overflow-x:hidden;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+div.states{
+  display:flex;
+  width:80%;
+  height:100px;
+  position: relative;
+  top:-24px;
+}
+div.states div{
+  width:100px;
+  text-align: center;
+}
+div.states a{
+  color:#6E5A64;
+}
+div.states div:hover span{
+  text-decoration: underline;
+}
+div.fixedHeader{
+  position: fixed;
+  width:100%;
+  z-index:40;
+  background: white;
+  margin-left: -8px;
+}
+div.delacrossind{
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:50px;
+  margin:-14px;
+  width:102%;
+  background: #FDE3BC;
+  font-size:1.2vw;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+a.knowmore{
+  padding:10px;
+  color:white;
+  font-size: larger;
+  background:#00BAC6;
+  border-radius:7px;
+}
+/* Top Links */
+div.topLinks{
+  width:94%;
+  margin:auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  font-size: small;
+}
+div.topLinks a{
+  display: inline;
+  font-weight:100;
+  color:#6E5A64;
+}
+div.topLinks a:hover{
+  text-decoration: underline;
+}
+div.support{
+  text-align: right;
+}
+div.support p{
+  margin-top:0;
+}
+/* Top Links */
+ /* TOP SECOND SECTION OF SEARCH NAV BAR */
+ /* Brand Level */
+div.brandLevel{
+  width: 94%;
+  margin:auto;
+  height:60px;
+  display:grid;
+  grid-template-columns: 30% 30% 40%;
+}
+div.search input{
+  margin-left:30px;
+  width:28vw;
+  height: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border: none;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+div.navLinks{
+  padding-left:70px;
+}
+div.navLinks a{
+  color:#6E5A64;
+  margin-left:5px;
+  margin-right:5px;
+  vertical-align: middle;
+  font-size:14px;
+}
+.search{
+  display: flex;
+  align-items: center;
+  
+}
+div.navLinks a{
+  display:inline;
+  position:relative;
+  top:24%;
+}
+div.logo img{
+  width:22vw;
+  height:4vw;
+}
+                                      /* TOP SECOND SECTION OF SEARCH NAV BAR ENDED HERE  */
+/* Brand Level */
+/* NAV BAR Box Dropdown  ON HOVERING STYLES STRARTS  HERE */
+/* Categories */
+#category_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+div.categories{
+  width: 70%;
+  margin:-10px;
+  position: relative;
+  z-index: 5;
+  font-size: 1.2vw;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.categories li{
+  display: inline-block;
+  margin-right:-5px;
+}
+div.categories li.categ,div.categories li.active{
+  padding:13px;
+}
+div.categories li.categ:hover{
+  cursor: pointer;
+  background: linear-gradient(90deg, rgba(61,179,168,1) 0%, rgba(220,187,61,1) 100%);
+  color:white;
+}
+div.categories li.active{
+  background: linear-gradient(90deg, rgba(61,179,168,1) 0%, rgba(220,187,61,1) 100%);
+  color:white;
+}
+#category_img{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#category_img>img{
+  width: 30%;
+}
+
+/* Categories */
+/* Box Dropdown */
+div.boxDropdown{
+  width:88%;
+  position: absolute;
+  left:100px;
+  top:73%;
+  display:none;
+  z-index:10;
+  background:rgb(209, 209, 209);
+  font-size:14px;
+  font-weight: 300;
+  
+}
+div.boxDropdown > div{
+  display:flex;
+  background:white;
+  position: absolute;
+  z-index:10;
+  box-shadow: 0 0 10px #6E5A64;
+  left:0;
+  top:0;
+  flex-direction: row;
+}
+div.boxDropdown div.contactLenses div{
+  width:230px;
+  height:400px;
+}
+div.storeLocator{
+  width:100% !important;
+}
+div.storeLocator div:nth-child(2){
+  width:40% !important;
+}
+div.boxDropdown div.eyetest div,div.boxDropdown div.tryathome div{
+  width:550px;
+  height:330px;
+}
+div.pic img{
+  margin:30px;
+}
+div.boxDropdown div.eyeglasses div{
+  width:175px;
+  height:330px;
+}
+div.boxDropdown div.eyeglasses div.category,div.gender{
+  width:200px !important;
+}
+div.boxDropdown div.eyeglasses div.category ul,div.gender ul{
+  margin-left:-40px;
+}
+div.boxDropdown div.eyeglasses div.category li,div.gender li{
+  padding:14px;
+}
+div.boxDropdown div.eyeglasses div.category li img,div.gender li img{
+  margin-left:40px;
+  width:40px;
+}
+div.boxDropdown div.eyeglasses div.category li:hover,div.gender li:hover{
+  background: #DCDBD4;
+  cursor: pointer;
+}
+div.boxDropdown > div.eyeglasses > div > h3,h4{
+  text-align: center;
+}
+div.boxDropdown div.eyeglasses div.gender,div.category{
+  border-right:1px solid #ededed;
+}
+div.boxDropdown ul.list li{
+  padding:10px;
+  font-size: x-small;
+}
+div.boxDropdown ul.list li:hover{
+  font-weight: bolder;
+  font-size: small;
+  cursor: pointer;
+}
+div.boxDropdown ul.list li:hover::after{
+  content: ' >';
+}
+div.solutions img{
+  width:47%;
+  display: inline-block;
+}
+a.bookapt{
+ padding:15px;
+ background: linear-gradient(90deg, rgba(61,179,168,1) 0%, rgba(220,187,61,1) 100%);
+  border:none;
+  color:white;
+}
+/* NAV BAR Box Dropdown  ON HOVERING STYLES ENDED  HERE */
+/* FOOTER STYLES FOROM HERE */
+footer{
+  margin-top: 200px;
+ margin-left: -8px;
+  width: 102%;
+ /* margin-right: -8px; */
+  /* border:  1px solid red; */
+  background-color: #000042;
+ color: white;
+}
+                                     
+                                      
+                                      
+ footer > div{
+  margin:20px auto;
+ text-align:center;
+  color: white;
+ }
+
+ div.sns img{
+ margin-left:20px;
+}
+ footer div:nth-child(3) a{
+  color:#12afd6;
+  }
+   footer a{
+  color:#6E5A64;
+  }
+  footer div.navbar{
+  text-align:left;
+ border-top:2px solid #b6b6b6;
+ border-bottom:2px solid #b6b6b6;
+ padding:20px;
+}
+footer div.navbar a{
+  margin:auto 1.4vw;
+ }
+footer div.links a{
+ margin:auto 1vw;
+ }
+                                      
+  footer div.morelinks{
+   text-align:left;
+ margin-left:50px;
+ }
+ footer div.morelinks a::before{
+ content:'| ';
+}
+footer div.morelinks a::after{
+content:' '; }
+ footer div.morelinks{
+ font-size:x-small;
+ }
+/* ******************************************************************** */
+.do-more img{
+  width: 100%;
+  margin: auto;
+}
+.do-more{
+  margin-top: 50px;
+  
+}
+
+/* AS SEEN ON SHARK TANK ******************************************/
+.as-seen-on-shark-tank{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.as-seen-on-shark-tank > div> img{
+  width: 100%;
+}
+.as-seen-on-shark-tank > div:nth-child(1){
+  
+  width: 95%;
+  margin: auto;
+}
+
+
+/* TRENDING GLASSES ********************************************/
+.trending-sunglasses{
+  margin-top: 75px;
+  margin-bottom: 20px;
+}
+.trending-sunglasses > div> img{
+width: 100%;
+}
+.trending-sunglasses > div:nth-child(1){
+width: 95%;
+margin: auto;
+}
+.trending-sunglasses > div:nth-child(2){
+  margin-top: 30px;
+}
+
+/* FIRST SLIDER***************************** */
+.slider{
+  margin-top: 50px;
+}
+.slider img{
+  width: 100%;
+}
+
+/* AS SEEN ON KIARA ***********************************/
+.as-seen-on-kiara{
+  margin-top: 75px;
+  margin-bottom: 20px;
+}
+.as-seen-on-kiara> div> img{
+width: 100%;
+}
+.as-seen-on-kiara > div:nth-child(1){
+width: 95%;
+margin: auto;
+}
+.as-seen-on-kiara > div:nth-child(2){
+  margin-top: 30px;
+}
+
+/* GLAM UP ***************************************/
+.glam-up{
+  margin-top: 75px;
+  margin-bottom: 20px;
+}
+.glam-up> div> img{
+width: 100%;
+}
+.glam-up > div:nth-child(1){
+width: 95%;
+margin: auto;
+}
+.glam-up > div:nth-child(2){
+  margin-top: 30px;
+}
+
+
+/* INTRODUCTION OJOS WEAR ***************************/
+.ojos{
+  margin-top: 75px;
+  margin-bottom: 20px;
+}
+.ojos> div> img{
+width: 100%;
+}
+.ojos > div:nth-child(1){
+width: 95%;
+margin: auto;
+}
+.ojos > div:nth-child(2){
+  width: 85%;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+
+/* CONTACT LENSES AND MORE ********************** */
+.contact-lens{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px 20px;
+  /* border: 2px solid red; */
+  width: 85%;
+  margin: auto;
+  margin-top: 30px;
+}
+.cont-lens img{
+  width: 100%;
+}
+.cont-lens{
+  margin-top: 75px;
+}
+
+/* BUY IT YOUR WAY************************* */
+.buy-it img{
+   width: 100%;
+}
+.buy-your{
+  display: grid;
+  width: 95%;
+  grid-template-columns: repeat(2,1fr);
+  margin: auto;
+  gap: 12px 15px;
+  margin-top: 30px;
+}
+.buy-it{
+  margin-top: 75px;
+}
+.first-img{
+  width: 95%;
+  margin: auto;
+  /* border: 2px solid red; */
+}
+
+/* OUR BRANDS*************************** */
+.our-brand{
+  margin-top: 75px;
+  margin-bottom: 20px;
+}
+.our-brand> div> img{
+width: 100%;
+}
+.our-brand > div:nth-child(1){
+width: 95%;
+margin: auto;
+}
+.our-brand > div:nth-child(2) > img{
+  width: 100%;
+  /* margin-left: 100px; */
+  margin-top: 30px;
+}
+
+/* EYEGLASSES SLIDER */
+.autoplay img{
+  width: 70%;
+  margin: auto;
+  /* border: 2px solid red; */
+  margin-bottom: 20px;
+}
+p{
+  margin-top: 50px;
+  font-family: futurastd-book,helvetica neue,Helvetica,Arial,sans-serif;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+
+/* JHON JACOB**************************************** */
+.jhon-jacob  img{
+  width: 100%;
+  margin-top: 75px;
+  margin-bottom: 0px;
+}
+
+/* LENSKART AIR******************************* */
+.lens-air img{
+  width: 100%;
+  margin-top: 75px;
+  margin-bottom: 0px;
+}
+
+
+/* LENSKART READERS*********************************** */
+.lens-reader img{
+  width: 100%;
+  margin-top: 75px;
+  margin-bottom: 0px;
+}
+
+/* HOPPER******************************* */
+.hopper img{
+  width: 100%;
+  margin-top: 75px;
+  margin-bottom: 0px;
+}
+
+
+/* LENS CLEANER************************** */
+.lens-clean img{
+  width: 100%;
+  margin-top: 75px;
+  margin-bottom: 0px;
+}
+
+/* CALL OUR EXPERTS*-*************************************************** */
+.call-expert img{
+  width: 100%;
+  margin-top: 75px;
+  margin-bottom: 0px;
+}
+
+.navbar > a{
+  color: white;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links > a{
+  color: white;
+}
+.morelinks > p >  a{
+  color: white;
+}
+.sns img{
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+}
+.morelinks >:nth-child(1){
+  padding-right: 10px;
+}
+.morelinks{
+  line-height: 45px;
+}
+.morelinks > p > b{
+  color:  #0665a4 ;
+}
+.foot{
+margin-top: 0px;
+padding-top: 1px;
+margin-bottom: 0px;
+padding-bottom: 50px;
+}

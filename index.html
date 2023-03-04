@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+   
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./indexx.css">
+
+
+    <style>
+        .slick-prev {
+        left: 69px;
+      z-index: 1;
+      height: 50px;
+      width: 80px;
+      /* border: 1px solid black; */
+  }
+  
+  .slick-prev:before, .slick-next:before {
+      font-family: 'slick';
+      font-size: 50px;
+      line-height: 1;
+      color: white;
+      opacity: 10;
+  }
+  
+  
+  .slick-next{
+      left: 900x;
+      z-index: 1;
+      height: 50px;
+      width: 80px;
+      /* border: 1px solid black; */
+      margin-right: 100px;
+  }
+  
+  .slider div{
+   
+    margin: 0 7px 0 7px;
+    border-radius: 10px;
+   
+  }
+
+  .slider img{
+        border-radius: 10px;
+        width: 1240px;
+  }
+    </style>
+    
+</head>
+<body>
+      
+    <!-- HEADER AND NAV BAR*********************************** -->
+    <div class="fixedHeader">
+        <div class="topLinks">
+            <div class="links">
+                <a href="#">Try in 3d</a> | 
+               <a href="#">Lenskart @office</a> | 
+                <a href="#">Lenskart Blog</a> |
+                <a href="#">Refer & Earn</a> |
+                <a href="#">Store Locator</a> |
+                <a href="#">CoBrowsing</a>
+            </div>
+            <div class="support">
+                <span>Contact us at </span>
+                    <a href="support@lenskart.com">support@lenskart.com</a>
+                
+            </div>
+        </div>
+        <div class="brandLevel">
+            <div class="logo">
+                <img src="https://static1.lenskart.com/media/desktop/img/lk-logo-f.png">
+            </div>
+            <div class="search">
+                <input type="text" name="Lens" placeholder="What are you looking for ?"/>
+                <img src="https://img.icons8.com/pastel-glyph/30/000000/search--v2.png"/>
+            </div>
+            <div class="navLinks">
+                <a href="./signin and signup/signin.html">Sign In & Sign Up</a>
+                <a href="./Admin Dashboard/admin.html">ADMIN PAGE</a>
+                <a href="#"><img style="vertical-align: bottom;" src="https://img.icons8.com/cute-clipart/25/000000/like.png"/> Shortlist</a>
+                <a href="./cart.html"><img src="https://img.icons8.com/officexs/16/000000/shopping-cart-loaded.png"/> Cart</a>
+            </div>
+        </div>
+            <div id="category_container">
+                <div class="categories">
+                    <ul>
+                        <li class="categ">Eyeglasses</li>
+                        <li class="categ">Sunglasses</li>
+                        <li class="categ">Contact Lenses</li>
+                        <li class="categ">Home Eye -Test</li>
+                        <li class="categ">Try Frames At Home</li>
+                        <li class="categ">Store Locator</li>
+                        <li class="active">Eyeglasses at &#8377;499</li>
+                    </ul>
+                </div>
+                <div id="category_img">
+                    <img src="https://static.lenskart.com/media/desktop/img/menu/icon_try_on.svg" />
+                    <img src="https://static.lenskart.com/media/desktop/img/menu/blu-icon.svg" />
+                    <img src="https://static.lenskart.com/media/desktop/img/menu/gold-icon.svg" />
+                </div>
+            </div>    
+         
+         <div class="boxDropdown">
+             <div class="eyeglasses">
+                 <div class="gender">
+                    <h3>Select Gender</h3>
+                    <ul>
+                        <li id="meenn">Men<img src="https://static.lenskart.com/media/desktop/img/ic_men.svg"/>&nbsp;&nbsp;></li>
+                        <li id="woomenn">Women<img src="https://static.lenskart.com/media/desktop/img/ic_women.svg"/>&nbsp;&nbsp;></li>
+                        <li id="kiids">Kids<img src="https://static.lenskart.com/media/desktop/img/ic_kids.svg" />&nbsp;&nbsp;></li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Select Category</h3>
+                    <ul>
+                        <li>CLASSIC EYEGLASSES starting from RS 999&nbsp;&nbsp;></li>
+                        <li>CLASSIC EYEGLASSES starting from RS 999&nbsp;&nbsp;></li>
+                        <li>CLASSIC EYEGLASSES starting from RS 999&nbsp;&nbsp;></li>
+                        <li>COMPUTER EYEGLASSES starting from RS 999&nbsp;&nbsp;></li>
+                    </ul>
+                 </div>
+                 <div class="ourTopPicks">
+                    <h4>OUR TOP PICKS</h4>
+                    <ul class="list">
+                        <li>New Arrivals</li>
+                        <li>Best Seller</li>
+                        <li>Lenskart BLU lenses</li>
+                        <li>Trending</li>
+                        <li>Tinted Eyeglasses</li>
+                        <li>Computer Eyeglasses</li>
+                    </ul>
+                </div>
+                <div class="frameTypes">
+                    <h4>FRAME TYPE</h4>
+                    <ul class="list">
+                        <li>Rectangle Frames</li>
+                        <li>Wayfarer Frames</li>
+                        <li>Round Frames</li>
+                        <li>Avatar Frames</li>
+                        <li>Cat-Eye Frames</li>
+                        <li>Rimless Frames</li>
+                        <li>Half Rim Frames</li>
+                    </ul>     
+                 </div>
+                 <div class="collection">
+                    <h4>COLLECTION</h4>
+                    <ul class="list">
+                        <li>Air Collection</li>
+                        <li>Steel Escobar Collection</li>
+                        <li>Sports Collection</li>
+                        <li>Designer Collection</li>
+                        <li>Acetate Collection</li>
+                        <li>Light Weight Collection</li>
+                        <li>Air Flex Collection</li>
+                        <li>Tortoise Collection</li>
+                    </ul>
+                 </div>
+                 <div class="brands">
+                    <h4>BRANDS</h4>
+                    <ul class="list">
+                        <li>Vincent Chase</li>
+                        <li>John Jacobs</li>
+                        <li>Ray-Ban</li>
+                        <li>Carrera</li>
+                        <li>Ookley</li>
+                        <li>Tommy Hilfiger</li>
+                        <li>Vague</li>
+                        <li>Mask</li>
+                    </ul>
+                 </div>
+             </div>
+         </div>
+         <div class="boxDropdown">
+            <div class="eyeglasses sunglasses">
+                <div class="gender">
+                   <h3>Select Gender</h3>
+                   <ul>
+                       <li id="sunnnmen">Men<img src="https://static.lenskart.com/media/desktop/img/ic_men.svg"/>&nbsp;&nbsp;></li>
+                       <li id="sunnwo">Women<img src="https://static.lenskart.com/media/desktop/img/ic_women.svg"/>&nbsp;&nbsp;></li>
+                       <li id="sunnkid">Kids<img src="https://static.lenskart.com/media/desktop/img/ic_kids.svg" />&nbsp;&nbsp;></li>
+                   </ul>
+               </div>
+               <div class="category">
+                   <h3>Select Category</h3>
+                   <ul>
+                       <li>CLASSIC SUNGLASSES starting from RS 999&nbsp;&nbsp;></li>
+                       <li>CLASSIC SUNGLASSES starting from RS 999&nbsp;&nbsp;></li>
+                       <li>CLASSIC SUNGLASSES starting from RS 999&nbsp;&nbsp;></li>
+                   </ul>
+                </div>
+                <div class="ourTopPicks">
+                   <h4>OUR TOP PICKS</h4>
+                   <ul class="list">
+                       <li>New Arrivals</li>
+                       <li>Best Seller</li>
+                       <li>Pilot Style</li>
+                       <li>Power Sunglasses</li>
+                       <li>Polarised Sunglasses</li>
+                   </ul>
+               </div>
+               <div class="frameTypes">
+                   <h4>SHAPE</h4>
+                   <ul class="list">
+                       <li>Aviator</li>
+                       <li>Rectangle</li>
+                       <li>Wayfarer</li>
+                       <li>Square</li>
+                       <li>Round</li>
+                       <li>Reflector</li>
+                       <li>Cat Eye</li>
+                       <li>Clubmaster</li>
+                   </ul>     
+                </div>
+                <div class="collection">
+                   <h4>COLLECTION</h4>
+                   <ul class="list">
+                       <li>Power Sunglasses</li>
+                       <li>Polarised</li>
+                       <li>High Fashion</li>
+                       <li>Sport Collection</li>
+                       <li>Designer Collection</li>
+                       <li>Retro Collection</li>
+                       <li>Clubmaster</li>
+                   </ul>
+                </div>
+                <div class="brands">
+                   <h4>Brands</h4>
+                   <ul class="list">
+                       <li>Ray-Ban</li>
+                       <li>Vincent Chase</li>
+                       <li>John Jacobs</li>
+                       <li>Carrera</li>
+                       <li>Ookley</li>
+                       <li>FCUK</li>
+                       <li>Vague</li>
+                       <li>Fossil</li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+        <div class="boxDropdown">
+            <div class="contactLenses">
+                <div class="brands">
+                    <h4>Brands</h4>
+                    <ul class="list">
+                        <li>Aqualens</li>
+                        <li>Bausch Lomb</li>
+                        <li>Johnson & Johnson</li>
+                        <li>Soflens</li>
+                        <li>Acuvue</li>
+                        <li>Iconnect</li>
+                        <li>Alcon</li>
+                        <li>Air Optix</li>
+                        <li>Pure Vision</li>
+                    </ul> 
+                </div>
+                <div class="bydispose">
+                    <h4>EXPLORE BY DISPOSABILITY</h4>
+                    <ul class="list">
+                        <li>Monthly</li>
+                        <li>Day & Night</li>
+                        <li>Daily</li>
+                        <li>Yearly</li>
+                        <li>Bi-weekly</li>
+                    </ul> 
+                </div>
+                <div class="bypower">
+                    <h4>EXPLORE BY POWER</h4>
+                    <ul class="list">
+                        <li>Spherical - (CYL&lt;0.5)</li>
+                        <li>Spherical + (CYL&lt;0.5)</li>
+                        <li>Cylindrical Power(&gt;0.75)</li>
+                        <li>Toric Power</li>
+                    </ul> 
+                </div>
+                <div class="bycolors">
+                    <h4>EXPLORE BY COLORS</h4>
+                    <ul class="list">
+                        <li>Green</li>
+                        <li>Blue</li>
+                        <li>Brown</li>
+                        <li>Turquoise</li>
+                        <li>View All colors</li>
+                    </ul> 
+                </div>
+                <div class="solutions">
+                    <h4>SOLUTION</h4>
+                        <a href="#"><img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/cl_1.jpg" /></a>
+                        <a href="#"><img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/cl_2.jpg" /></a>
+                        <a href="#"><img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/cl_3.jpg" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="boxDropdown">
+            <div class="eyetest">
+                <div class="pic">
+                    <img src="https://static.lenskart.com/media/desktop/img/menu/banner_home_eye_checkup.jpg" />
+                </div>
+                <div class="checkingInfo">
+                    <h3 style="text-align:left">Get your eyes checked at home</h3>
+                    <p>A certified refractionist will visit you with latest eye testing machines & 100 trial frames</p>
+                    <p><b>Try these frames at your home completely free</b></p><br />
+                    <a href="#" class="bookapt">BOOK APPOINTMENT</a>
+                </div>
+            </div>
+        </div>
+    <div class="boxDropdown">
+        <div class="tryathome">
+            <div class="pic">
+                <img src="https://static.lenskart.com/media/desktop/img/menu/banner_try_at_home.jpg" />
+            </div>
+            <div class="checkingInfo">
+                <h3 style="text-align:left">Try frames at home Try upto 100 best selling frames at your home</h3>
+                <p>An eyewear specialist carrying bestselling 100 frames will visit you for home trial Try these frames at your home completely free Book appointment</p>
+                <p><b>Try these frames at your home completely free</b></p><br />
+                <a href="#" class="bookapt">BOOK APPOINTMENT</a>
+            </div>
+        </div>
+    </div>
+    <div class="boxDropdown">
+        <div class="storeLocator">
+            <div class="pic">
+                <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/banner_try_at_store.jpg" />
+            </div>
+            <div class="checkingInfo">
+                <h2>Over 500 Lenskart Store</h2>
+                <p>Experience eyewear in a whole new way: Visit your nearest store and treat yourself to 5000+ eyewear styles ' in try at store block.</p>
+                <p><b>Try these frames at your home completely free</b></p><br />
+                <div class="states">
+                    <div>
+                        <a href="#">
+                            <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/ic_delhi.png" />
+                            <span>India</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/ic_bangalore.png" />
+                            <span>Bangalore</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/ic_mumbai.png" />
+                            <span>Mumbai</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/ic_ahmedabad.png" />
+                            <span>Ahmedabad</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/ic_chennai.png" />
+                            <span>Chennai</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/ic_hyderabad.png" />
+                            <span>Hyderabad</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="https://static5.lenskart.com/images/cust_mailer/24-Jan-App-Tiles/100cities.png" />
+                            <span>+100 cities</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="bookapt">LOCATE A STORE</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="content">
+        <div class="breadcrumb">
+            <div>
+                <a href="#">Eyewear &gt;&gt;</a>
+                <a href="#"> Eyeglasses &gt;&gt;</a>
+                <a href="#"> Promotions &gt;&gt;</a>
+                <p> 999-Blue thin lens</p>
+            </div>
+            <!-- <div>
+                <p>Problem in placing order ? Give a missed call <a href="#">18001020767</a></p>
+            </div> -->
+        </div>
+
+
+
+
+
+
+    <!-- FIRST SLIDERRRRRRRR***************************************** -->
+    <div class="slider">
+        
+       <div> <img src="https://static1.lenskart.com/media/desktop/img/Jan23/desktoop.gif" alt=""> </div>
+
+      <div>  <img src="https://static1.lenskart.com/media/desktop/img/Dec22/5-Jan/1920x530(play-now)%20(1).gif" alt=""> </div>
+
+       <div> <img src="https://static1.lenskart.com/media/desktop/img/Dec22/15-Dec/1920x520_UPTO60_F1.gif" alt=""></div>
+
+      <div>  <img src="https://static1.lenskart.com/media/desktop/img/Dec22/new-collection/desktop.gif" alt=""></div>
+
+      
+      <div>  <img src="https://static1.lenskart.com/media/desktop/img/Dec22/blend-edit/web.jpg" alt="">  </div>
+
+      <div> <img src="https://static1.lenskart.com/media/desktop/img/Nov22/airplay/desk-play.jpg" alt="">  </div>
+      <div>
+        <img src="https://static1.lenskart.com/media/desktop/img/Nov22/LK-Airflex-desktop-banner.gif" alt="">
+      </div> 
+
+      <div>
+        <img src="https://static1.lenskart.com/media/desktop/img/Nov22/tinted/launch-desk.gif" alt="">
+      </div> 
+
+      <div>
+        <img src="https://static1.lenskart.com/media/desktop/img/Jan23/23jan/hooper/hooper-web.jpg" alt="">
+      </div> 
+
+      <div>
+        <img src="https://static1.lenskart.com/media/desktop/img/Nov22/trans1.gif" alt="">
+      </div> 
+
+      <div>
+        <img src="https://static1.lenskart.com/media/desktop/img/Dec22/1-Dec/Homepage-Banner-web.gif" alt="">
+      </div> 
+
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <div class="do-more">
+        <img src="https://static1.lenskart.com/media/desktop/img/Apr22/Bannerforexport.jpg" alt="">
+    </div>
+
+    <!-- /* AS SEEN ON SHARK TANK **************/ -->
+    <div class="as-seen-on-shark-tank">
+        <div>
+           <img src="./Images/as seenon shark tank.png" alt="">
+        </div>
+
+        <div>
+           <img src="https://static1.lenskart.com/media/desktop/img/Dec22/1-Dec/Homepage-Banner-web.gif" alt="">
+        </div>
+    </div>
+
+    <!-- /* TRENDING GLASSES***************** */ -->
+    <div class="trending-sunglasses">
+        <div>
+           <img src="./Images/trending sunglasses.png" alt="">
+        </div>
+
+        <div>
+           <img src="https://static1.lenskart.com/media/desktop/img/Jan23/sunglasses/Sun-Banner-web.gif" alt="">
+        </div>
+    </div>
+
+
+    <!-- AS SEEN ON KIARA******************** -->
+    <div class="as-seen-on-kiara">
+        <div>
+           <img src="./Images/as seen on kiara.png" alt="">
+        </div>
+
+        <div>
+           <img src="https://static1.lenskart.com/media/desktop/img/Nov22/23-Nov/Hompage-banner4.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Aquacolor - Glam Up With Color Lenses****************************** -->
+    <div class="glam-up">
+        <div>
+           <img src="./Images/glam up.png" alt="">
+        </div>
+
+        <div>
+           <img src="https://static1.lenskart.com/media/desktop/img/Oct22/kiara/Refresh-Banner-Web.gif" alt="">
+        </div>
+    </div>
+
+    <!-- INTODUCING OJOS WEAR ****************************** -->
+    <div class="ojos">
+        <div>
+           <img src="./Images/ojos.png" alt="">
+        </div>
+
+        <div>
+           <img src="https://static1.lenskart.com/media/desktop/img/May22/ojos-web.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- CONTACT LENSES AND MORE ********************************-->
+    <div class="cont-lens">
+        <div class="first-img">
+        <img src="./Images/contact lens.png" alt="">
+      </div>
+        <div class="contact-lens">
+        <div>
+            <img src="https://static1.lenskart.com/media/desktop/img/June22/contact-lens-more.jpg" alt="">
+        </div>
+        <div>  
+            <img src="https://static1.lenskart.com/media/desktop/img/June22/contact-lens-more-1.jpg" alt="">
+        </div>
+    </div>
+    </div>
+
+    <!-- BUY IT YOUR WAY***************** -->
+      <div class="buy-it">
+        <div class="first-img">
+        <img src="./Images/buy it your way.png" alt="">
+    </div>
+        <div class="buy-your">
+            <div>
+                <img src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/call1800.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://static1.lenskart.com/media/desktop/img/Nov21/whatsapp.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/hto.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/stores.jpg" alt="">
+            </div>
+        </div>
+      </div>
+
+
+      <!-- OUR BRANDS**************************** -->
+      <div class="our-brand">
+        
+        <div>
+            <img src="./Images/our brands.png" alt="">
+        </div>
+
+        <div>
+            <img src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/VC-Banner.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- SLIDER EYEGLASS**************************** -->
+      <p>EYEGLASSES</p>
+      <hr>
+      <div class="autoplay">
+       
+        <div >
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e13046-c5-eyeglasses_G_9427.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/sand-dune-full-rim-hustlr-eyeglasses_csvfile-1672134506028-g_6941_12_13_22.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/e/lenskart-air-la-e13032-c1-eyeglasses_g_1999.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/sand-dune-full-rim-hustlr-eyeglasses_csvfile-1672134506028-g_6941_12_13_22.jpg" alt="">
+    </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/e/lenskart-air-la-e13032-c1-eyeglasses_g_1999.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e13046-c5-eyeglasses_G_9427.jpg" alt="">
+    </div>
+      </div>
+
+
+      <!-- SUNGLASSES******************************** -->
+      <p>SUNGLASSES</p>
+      <hr>
+      <div class="autoplay">
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/black-silver-blue-gradient-full-rim-wayfarer-vincent-chase-polarized-tinted-vc-s11110-c11-sunglasses_g_2347_9_27_22.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s14944-c1-sunglasses_g_9048_06_09_2022.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/gold-black-brown-gradient-full-rim-aviator-vincent-chase-polarized-vintage-vc-s13110-c9-sunglasses_g_3766_7_05_22.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s14944-c1-sunglasses_g_9048_06_09_2022.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/black-silver-blue-gradient-full-rim-wayfarer-vincent-chase-polarized-tinted-vc-s11110-c11-sunglasses_g_2347_9_27_22.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/gold-black-brown-gradient-full-rim-aviator-vincent-chase-polarized-vintage-vc-s13110-c9-sunglasses_g_3766_7_05_22.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- JHON JACOB************************************************ -->
+      <div class="jhon-jacob">
+        <img src="https://static1.lenskart.com/media/desktop/img/Nov22/Updated%20brand%20banner%20jj%20.jpg" alt="">
+      </div>
+
+
+      <!-- SLIDER EYEGLASS**************************** -->
+      <p>EYEGLASSES</p>
+      <hr>
+      <div class="autoplay">
+       
+        <div >
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-e11675-c1-eyeglasses_g_1122_2.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/silver-grey-full-rim-aviator-john-jacobs-supreme-steel-jj-e13466---c1-eyeglasses_g_9248_13_jan_23.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//f/i/transparent-full-rim-round-fossil-vintage-fos7131/g-63m-eyeglasses_g_1227_20_05_2022.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//f/i/transparent-full-rim-round-fossil-vintage-fos7131/g-63m-eyeglasses_g_1227_20_05_2022.jpg" alt="">
+    </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/silver-grey-full-rim-aviator-john-jacobs-supreme-steel-jj-e13466---c1-eyeglasses_g_9248_13_jan_23.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-e11675-c1-eyeglasses_g_1122_2.jpg" alt="">
+    </div>
+      </div>
+
+
+      <!-- SUNGLASSES******************************** -->
+      <p>SUNGLASSES</p>
+      <hr>
+      <div class="autoplay">
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/Black-Tortoise-Green-Full-Rim-Rectangle-John-Jacobs-JJ-Tints-JJ-S11089-C1-Sunglasses_john-jacobs-jj-s11089-c1-sunglasses_G_144418_02_2022.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/Silver-Grey-Mirror-Full-Rim-Square-John-Jacobs-JJ-Tints-JJ-S12503-C4-Polarized-Sunglasses_john-jacobs-full-rim-aviator-jj-s12503-c4-sunglasses_sunglasses_sunglasses_g_1797_1_118_02_2022.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-s12472-c2-sunglasses_sunglasses_g_1972_1_1.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-s12472-c2-sunglasses_sunglasses_g_1972_1_1.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/Silver-Grey-Mirror-Full-Rim-Square-John-Jacobs-JJ-Tints-JJ-S12503-C4-Polarized-Sunglasses_john-jacobs-full-rim-aviator-jj-s12503-c4-sunglasses_sunglasses_sunglasses_g_1797_1_118_02_2022.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/Black-Tortoise-Green-Full-Rim-Rectangle-John-Jacobs-JJ-Tints-JJ-S11089-C1-Sunglasses_john-jacobs-jj-s11089-c1-sunglasses_G_144418_02_2022.jpg" alt="">
+        </div>
+      </div>
+
+
+      <!-- LENSKART AIR**************** -->
+      <div class="lens-air">
+        <img src="https://static1.lenskart.com/media/desktop/img/Aug21/25-Aug/LK-AIR-Banner.jpg" alt="">
+    </div>
+
+
+    <!-- SLIDER EYEGLASS**************************** -->
+    <p>EYEGLASSES</p>
+    <hr>
+    <div class="autoplay">
+     
+      <div >
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12707-foll-rim-rnd-tr90ss-mtl-c4-eyegasus_g_6272.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12850-c1-eyeglasses_g_7946.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12707-foll-rim-rnd-tr90ss-mtl-c3-eyegasus_g_2989.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12850-c1-eyeglasses_g_7946.jpg" alt="">
+  </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12707-foll-rim-rnd-tr90ss-mtl-c3-eyegasus_g_2989.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12707-foll-rim-rnd-tr90ss-mtl-c4-eyegasus_g_6272.jpg" alt="">
+  </div>
+    </div>
+
+    <!-- LENSKART READERS******************************** -->
+    <div class="lens-reader">
+        <img src="https://static1.lenskart.com/media/desktop/img/Aug21/25-Aug/LK-Readers-Banner.jpg" alt="">
+    </div>
+
+
+    <!-- SLIDER EYEGLASS**************************** -->
+    <p>EYEGLASSES</p>
+    <hr>
+    <div class="autoplay">
+     
+      <div >
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12707-foll-rim-rnd-tr90ss-mtl-c4-eyegasus_g_6272.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12850-c1-eyeglasses_g_7946.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12707-foll-rim-rnd-tr90ss-mtl-c3-eyegasus_g_2989.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12850-c1-eyeglasses_g_7946.jpg" alt="">
+  </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12707-foll-rim-rnd-tr90ss-mtl-c3-eyegasus_g_2989.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12707-foll-rim-rnd-tr90ss-mtl-c4-eyegasus_g_6272.jpg" alt="">
+  </div>
+    </div>
+
+
+
+    <!-- HOPPER************************************ -->
+    <div class="hopper">
+        <img src="https://static1.lenskart.com/media/desktop/img/Nov20/25-Nov/Banner05_Final2ndDec21.jpg" alt="">
+    </div>
+
+    <!-- SLIDER EYEGLASS**************************** -->
+    <p>WITH POWER COMPUTER BLU LENSES</p>
+    <hr>
+    <div class="autoplay">
+     
+      <div >
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/blue-block-phone-&-computer-glasses:-purple-pink-purple-full-rim-round-kids-(8-12-yrs)-hooper-computer-glasses-hp-d10044l-c1_g_374130-may.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/blue-block-phone-&-computer-glasses:-black-full-rim-round-kids-(8-12-yrs)-hooper-computer-glasses-hp-d10044l-c2_g_379330-may.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/blue-block-phone-&-computer-glasses:-brown-full-rim-rectangle-kids-(8-12-yrs)-hooper-computer-glasses-hp-d10039l-c2_g_376130-may.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/blue-block-phone-&-computer-glasses:-blue-red-blue-full-rim-rectangle-kids-(8-12-yrs)-hooper-computer-glasses-hp-d10038l-c1_g_377930-may.jpg" alt="">
+  </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/blue-block-phone-&-computer-glasses:-black-red-maroon-full-rim-rectangle-kids-(8-12-yrs)-hooper-computer-glasses-hp-d10038l-c2_g_380030-may.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/blue-block-phone-&-computer-glasses:-red-full-rim-cat-eye-kids-(8-12-yrs)-hooper-hp-d10042l-c3_g_3734_5_30_22.jpg" alt="">
+  </div>
+    </div>
+
+
+    <!-- SUNGLASSES******************************** -->
+    <p>WITH ZERO POWER COMPUTER BLU LENSES</p>
+    <hr>
+    <div class="autoplay">
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/kids-glasses:blue-transparent-full-rim-rectangle-8-12-yrs-hooper-astra-hooper-c1_kids-glasses_blue-blue-transparent-full-rim-rectangle-8-12-yrs-hooper-astra-hooper-c1_g_8504_25_02_2022_23_03_2022.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/kids-glasses:pink-transparent-full-rim-square-8-12-yrs-hooper-astra-hooper-c3_kids-glasses_transparent-pink-transparent-full-rim-square-8-12-yrs-hooper-astra-hooper-c3_g_8543_23_03_2022.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/o/hooper-hp-e10004-c1-eyeglasses_G_5762.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/kids-glasses:blue-transparent-full-rim-square-8-12-yrs-hooper-astra-hooper-c2_kids-glasses_blue-transparent-full-rim-square-8-12-yrs-hooper-astra-hooper-c2_g_8449_25_02_2022_23_03_2022.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/o/hooper-hp-e10014l-c4-eyeglasses_G_0981.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/o/hooper-hp-e10015l-c1-eyeglasses_G_1044.jpg" alt="">
+      </div>
+    </div>
+
+
+
+    <!-- LENS CLEARANCE***************************************** -->
+    <div class="lens-clean">
+        <img src="https://static1.lenskart.com/media/desktop/img/June22/Our-Brands-Banner.jpg" alt="">
+    </div>
+
+    <!-- SLIDER EYEGLASS**************************** -->
+    <p>CONTACT LENSES</p>
+    <hr>
+    <div class="autoplay">
+     
+      <div >
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/q/aqualens-dly-dspoble-cntct-lense-10-lenses_aqualens-dly-dspoble-cntct-lense-10-lenses_g_1173-10.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/q/aqualens-dly-dspoble-cntct-lense-30-lenses_lenses_untitled-1.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/q/aqualens-24-h-contact-lens-30-lens-box-contact-lens_lens_untitled-1_1_2.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/q/aqualens-24-h-nt-daily-dis-toric-20lens_g_3984.jpg" alt="">
+  </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/q/aqualens-24-h-nxt-monly-dis-con-3lens_g_1202.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/q/aqualens-10h-montly-3lns-contact-lens_g_1197.jpg" alt="">
+  </div>
+    </div>
+
+
+    <!-- SUNGLASSES******************************** -->
+    <p>COLOR CONTACT LENSES</p>
+    <hr>
+    <div class="autoplay">
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aquacolor-cosmo-violet-monthly-color-(2-lenses/box)_2rolloverx_5.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aquacolor-halo-black-monthly-color-(2-lenses/box)_2rolloverx_10.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aquacolor-hazel-brown-monthly-color-(2-lenses/box)_2rolloverx_12.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aquacolor-honey-brown-monthly-color-(2-lenses/box)_2rolloverx_21.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aquacolor-pine-green-monthly-color-(2-lenses/box)_2rolloverx_26.jpg" alt="">
+      </div>
+
+      <div>
+          <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aquacolor-olive-green-monthly-color-(2-lenses/box)_2rolloverx_24.jpg" alt="">
+      </div>
+    </div>
+
+
+
+    <!-- CALL OUR EXPERTS***************************************** -->
+    <div class="call-expert">
+        <img src="https://static1.lenskart.com/media/desktop/img/Aug21/25-Aug/whatsapp.png" alt="">
+    </div>
+
+    <!-- FOTTER******************************************** -->
+    <footer class="foot">
+        <div>
+            FOLLOW US
+        </div>
+        <div class="sns">
+            <img src="https://img.icons8.com/android/24/000000/facebook-new.png"/>
+            <img src="https://img.icons8.com/metro/24/000000/pinterest.png"/>
+            <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new.png"/>
+            <img src="https://img.icons8.com/android/24/000000/twitter.png"/>
+        </div>
+        <div>
+            Download Lenskart App to Buy <a href="#">Eyeglasses</a>
+        </div>
+        <div class="navbar">
+            <a href="#">STORE LOCATOR</a>
+            <a href="#">FAQ</a>
+            <a href="#">ENTER MY POWER</a>
+            <a href="#">BUYING GUIDE</a>
+            <a href="#">FRAME SIZE</a>
+        </div>
+        <div class="links">
+            <a href="#">Blog</a>
+            <a href="#">We are Hiring</a>
+            <a href="#">Refer & Earn</a>
+            <a href="#">About Us</a>
+            <a href="#">T & C</a>
+            <a href="#">Site Map</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Privacy</a>
+            <a href="#">Lenskart Coupons</a>
+        </div>
+        <div class="morelinks">
+            <p>
+                <b>Eyeglasses</b>
+                <a href="#">Free Frame</a>
+                <a href="#">Ray Ban</a>
+                <a href="#">Vincent Chase</a>
+                <a href="#">John Jacobs</a>
+                <a href="#">Full Rim</a>
+                <a href="#">Half Rim</a>
+                <a href="#">Rim Less</a>
+                <a href="#">Cat Eye</a>
+                <a href="#">Eye Checkup</a>
+                <a href="#">Eyeglasses</a>
+            </p>
+            <p>
+                <b>Sunglasses</b>
+                <a href="#">Ray Ban</a>
+                <a href="#">Ookley</a>
+                <a href="#">John Jacobs</a>
+                <a href="#">Vincent Chase</a>
+                <a href="#">Vogue</a>
+                <a href="#">Aviator Style</a>
+                <a href="#">Wayfarer Style</a>
+                <a href="#">Eyewear Accessories</a>
+                <a href="#">Sunglasses</a>
+                <a href="#">Goggles</a>
+            </p>
+            <p>
+                <b>Contact Lenses</b>
+                <a href="#">Bausch and lomb</a>
+                <a href="#">Colour lenses</a>
+                <a href="#">Daily Disposable</a>
+                <a href="#">Monthly Disposable</a>
+                <a href="#">Toric lenses</a>
+                <a href="#">Johnson & Johnson</a>
+                <a href="#">Cooper vision lenses</a>
+                <a href="#">Acuvue</a>
+                <a href="#">Purevision</a>
+                <a href="#">Sitemap.XML</a>
+            </p>
+        </div>
+    </footer>
+</div>
+</div>
+<img class="scrollUp"/>
+</div>
+     
+
+
+
+
+    <script type="text/javascript">
+        $('.slider').slick({
+         infinite: true,
+         speed: 300,
+         slidesToShow: 1,
+         centerMode: true,
+         variableWidth: true,
+         autoplay: true,
+         autoplaySpeed: 1500,
+       });
+       $('.autoplay').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+      });
+       </script>
+
+      
+</body>
+<script src="./indexx.js"></script>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table { 
+	width: 750px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+
+th { 
+	background: #3498db; 
+	color: white; 
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+	}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		/* Label the data */
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+    </style>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th> Name of company</th>
+            <th>Size</th>
+            <th>Price</th>
+            <th> Frametype</th>
+            <th>color</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+           
+         
+        </tbody>
+      </table>
+    
+</body>
+</html>
+<script>
+    let url="totalproduct.json";
+// fecthdata(url);
+// async function fecthdata(url){
+//   try {
+//     let data=await fetch(url);
+//     let actualdata=await data.json();
+//     console.log(actualdata)
+//   } catch (error) {
+//     console.log(error)
+//   }
+// }
+fetch(url).then((res)=>res.json())
+.then((data)=>displaytable(data))
+.catch((err)=>console.log(err));
+
+function displaytable(arr)
+{
+    console.log(arr,"inside table fun ")
+    console.log("gaurav your lenth" ,arr.length)
+
+    for(let i=0;i<arr.length;i++)
+    {
+        console.log(arr[i])
+        let tr=document.createElement("tr");
+    let td1=document.createElement("td");
+    td1.innerText=arr[i].name;
+    let td2=document.createElement("td");
+    td2.innerText=arr[i].size;
+    let td3=document.createElement("td");
+    td3.innerText=arr[i].price;
+    let td4=document.createElement("td");
+    td4.innerText=arr[i].frametype;
+    let td5=document.createElement("td");
+    td5.innerText=arr[i].color;
+    tr.append(td1,td2,td3,td4,td5);
+    document.getElementById("tablebody").append(tr);
+    }
+    // let tr=document.createElement("tr")
+    // let td1=docement.createElement("td")
+    // let td2=docement.createElement("td")
+    // let td3=docement.createElement("td")
+    // let td4=docement.createElement("td")
+    // let td5=docement.createElement("td")
+    // tr.append(td1,td2,td3,td4,td5)
+    // docemnet.querySelector("tbody").append(tr)
+
+}
+
+</script>
